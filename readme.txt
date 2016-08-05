@@ -7,4 +7,7 @@ Usage:
 
     curl -O http://uclhack.blob.core.windows.net/peach/PEACH_foodDiary_1Q2015.csv
 
-2. In recsys.py, run the run() function.
+2. Example use:
+
+    import recsys as rs
+    rs.run()
