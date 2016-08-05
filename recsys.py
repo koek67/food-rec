@@ -146,13 +146,15 @@ def calculate_mpr(train_model, test_mask):
     return [top_sum / bot_sum if bot_sum != 0 else -1, top_sum, bot_sum]
 
 
-def run(files = ["food_log_data.csv"],
+def run(files = ["PEACH_foodDiary_1Q2015.csv"],
         train_percs=[0.9, 0.8, 0.7, 0.6],
         latent=[1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
         logfile=datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d%H%M%S') + '.csv'):
     """
     Runner for this recommender system. Given the parameters, will run all permutations
-    of them and log the results
+    of them and log the results.
+
+
 
     :param files: an array of the relative paths to csv files with the data
     :param train_percs: array of what percentage of the dataset should be used for training
