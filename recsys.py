@@ -164,7 +164,7 @@ def run(files = ["PEACH_foodDiary_1Q2015.csv"],
     """
     log(logfile, "FILE, TRAIN_PERCENTAGE, LATENT, MPR, MPR_NUM, MPR_DNUM")
     for i, f in enumerate(files):
-        tfidf_matrix = get_data_matrix(f, vectorizer='count')
+        tfidf_matrix = get_data_matrix(f, vectorizer='tfidf')
         for perc in train_percs:
             train_mat, test_mat = split_test_train(tfidf_matrix, perc)
             for l in latent:
