@@ -172,3 +172,6 @@ def run(files = ["PEACH_foodDiary_1Q2015.csv"],
                 metrics = calculate_mpr(model_mat, test_mat)
                 print("{}, {}, {}, {}, {}, {}".format(f, perc, l, metrics[0], metrics[1], metrics[2]))
                 log(logfile, "{}, {}, {}, {}, {}, {}".format(f, perc, l, metrics[0], metrics[1], metrics[2]))
+
+if __name__ == "__main__":
+    run()
