@@ -9,5 +9,5 @@ Usage:
 
 2. Example use:
 
-    import recsys as rs
-    rs.run()
+    pip install -r requirements.txt
+    python recsys.py
